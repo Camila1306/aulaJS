@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastos em viagem</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Cadastro de Informações</title>
 </head>
 <body>
-    <div class="container">
         <h4>Cadastro de Informações</h4>
-        <form action="" method="post" class="row g-3">
+        <br>
+        <div id="dMsg"></div>
+        <br>
+        <form action="salvar.php" method="post" id="fCadastro" class="row g-3">
             <div class="col-md-4">
                 <label class="form-label " for="modelocarro" >Modelo do Carro</label>
                 <input class="form-control " type="text" placeholder="Modelo do Carro" name="modelocarro" id="modelocarro">
@@ -21,7 +22,7 @@
             </div>
             <div class="col-md-4">
                 <label class="form-label" for="motorista">Motorista</label>
-                <input class="form-control" type="text" placeholder="Nome do Motorista" name="nome" id="motorista">
+                <input class="form-control" type="text" placeholder="Nome do Motorista" name="motorista" id="motorista">
             </div>
             <div class="col-md-4">
                 <label class="form-label" for="origem">Local de Origem</label>
@@ -44,15 +45,14 @@
                 <input class="form-control" type="text" placeholder="Em R$" name="valorcombustivel" id="valorcombustivel">
             </div>
             <div class="col-md-4">
-                <input type="reset" name="limpar" value="Limpar" class="btn btn-outline-warning">
-                <input type="button" name="enviar" value="Enviar" class="btn btn-outline-success">
+                <input type="reset" id="bLimpar" value="Limpar" class="btn btn-outline-warning">&nbsp;| |&nbsp;
+                <input type="submit" id="bSalvar" name="bSalvar" value="Enviar" class="btn btn-outline-success">
             </div>
         </form>
-    </div>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script language="JavaScript" src="lib/funcoes.js"></script>
+
 </html>
