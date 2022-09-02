@@ -44,7 +44,7 @@
             return $valido;
         }
 
-        if (isset($_POST['bSalvar'])) {
+        if (isset($_POST['bGravar'])) {
             $valores = array("Modelo" => $_POST['modelocarro'],
                              "Placa" => $_POST['placacarro'],
                              "Motorista" => $_POST['motorista'],

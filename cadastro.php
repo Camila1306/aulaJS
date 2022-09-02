@@ -46,7 +46,7 @@
             </div>
             <div class="col-md-4">
                 <input type="reset" id="bLimpar" value="Limpar" class="btn btn-outline-warning">&nbsp;| |&nbsp;
-                <input type="submit" id="bSalvar" name="bSalvar" value="Enviar" class="btn btn-outline-success">
+                <input type="submit" id="bSalvar" name="bGravar" value="Gravar" class="btn btn-outline-success">
             </div>
         </form>
 
